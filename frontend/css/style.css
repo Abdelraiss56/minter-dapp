@@ -1,20 +1,17 @@
 /* FONTS */
 
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 /* GLOBAL STYLES */
-
 :root {
-  --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Arvo", serif;
-  --font-code: "Roboto", monospace;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
   --bg-color: #00163f;
-  --bg-color-transparent: #00163f80;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
   --accent-color: #be7efe;
-  --header-shadow: var(--accent-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
+  --header-shadow: #000 0px 0px 5px;
 }
 
 * {
@@ -22,6 +19,17 @@
   margin: 0;
   box-sizing: border-box;
 }
+.color--gradient-y {
+  background: linear-gradient(0deg, #f6fff2 0%, #c3ffa9 100%);
+  -webkit-background-clip: text; /* For older versions of WebKit-based browsers */
+  background-clip: text; /* Standard property for modern browsers */
+  -webkit-text-fill-color: transparent; /* Fill text with the background color */
+}
+.logo a {
+  text-decoration: none; /* Remove underline from the logo */
+  color: inherit; /* Use the default color */
+}
+
 
 body {
   background-color: var(--bg-color);
@@ -60,6 +68,7 @@ header .container {
   gap: 2rem;
   align-items: center;
 }
+
 
 /* NOT CONNECTED */
 .not-connected {
@@ -118,7 +127,8 @@ header .container {
   outline: none;
 }
 .btn:hover {
-  box-shadow: none;
+  background-color: #be7efe; /* Change background color on hover */
+  color: #ffffff; /* Change text color to white on hover */
 }
 .btn:disabled {
   cursor: default;
